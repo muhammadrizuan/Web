@@ -10,9 +10,8 @@
 <div id="topPanel">
 <ul>
 <li><a href="#">Contact</a></li>
-<li><a href="#">Clients</a></li>
-<li><a href="#"> Support</a></li>
 <li><a href="#">About us</a></li>
+<li><a href="#">Login</a></li>
 <li class="active">Home</li>
 </ul>
 <a href="index.html"><img src="images/logo.gif" title="Trial Services" alt="Trial Services" width="230" height="80" border="0" /></a>
@@ -58,21 +57,10 @@
 </div>
 <div id="footerPanel">
   <div id="footerbodyPanel">
-  <ul>
-  <li><a href="#">Home </a>| </li>
-  <li><a href="#">About us</a> | </li>
-  <li><a href="#">Support </a>| </li>
-  <li><a href="#">Clients</a> | </li>
-  <li><a href="#">Contact </a> </li>
-  </ul>
-  <p class="copyright">© trial services all right reaserved</p>
+  <p class="copyright">Coppyright © Muhammad Rizuan</p>
   <ul class="templateworld">
   	<li>Design By:</li>
 	<li><a href="http://www.templateworld.com" target="_blank">Template World</a></li>
-  </ul>
-   <div id="footerhtmlPanel"><a href="http://validator.w3.org/check?uri=referer" target="_blank">html</a></div>
-   <div id="footercssPanel"><a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">css</a></div>
-  </div>
 </div>
 </body>
 </html>
