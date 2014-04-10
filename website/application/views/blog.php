@@ -11,8 +11,8 @@
 <ul>
 <li><a href="#">Contact</a></li>
 <li><a href="#">About us</a></li>
-<li><a href="#">Login</a></li>
-<li class="active">Home</li>
+<li><a href="<?php echo base_url('index.php/clogin'); ?>">Login</a></li>
+<li><a href="#">Home</li>
 </ul>
 <a href="index.html"><img src="images/logo.gif" title="Trial Services" alt="Trial Services" width="230" height="80" border="0" /></a>
 <div id="headerPanelfast">
@@ -37,7 +37,6 @@
 	<p class="dotline"><img src="images/blank.gif" alt="" width="1" height="1" /></p>
 	<p class="capstext">If you are interested in seeing more of our free web template designs feel free to visit our website, Template World. We intend to add at least 25 new free templates in the coming month.</p>
 	<p class="dotline"><img src="images/blank.gif" alt="" width="1" height="1" /></p>
-	<p class="more"><a href="#">More</a></p>
 	<h3>Testimonials</h3>
 	<h4>Solutions</h4>
 	<ul>
