@@ -68,19 +68,43 @@
 </head>
 <body>
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-<ul class="nav navbar-nav">
-	<li><a href="#">Home</a></li>   
-	<li><a href="#">About us</a></li>
-	<li><a href="#">Contact</a></li>
-	<li><a href="cblog/logout">Logout</a></li>
-	</ul>
+<a class="navbar-brand" href="<?php echo base_url('index.php');?>">My Blog</a>
 </div>
 <br/>
 <div id="container">
-	<h1>Welcome <?php echo $username; ?> to My Blog role as <?php echo $role?></h1>
+	<h1>Welcome to registration</h1>
 
 	<div id="body">
- 
+	<?php echo validation_errors('<p class="error">'); ?>
+	<?php echo form_open('clogin/register'); ?>
+
+			<table>
+            <tr>
+                <td><label for="user_name">User name</label></td>
+                <td><input type="text" id="user_name" name="user_name" value="<?php echo set_value('username'); ?>" /></td>
+                <?php echo form_error('username'); ?>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" name="password" /></td>
+                <?php echo form_error('password'); ?>
+            </tr>
+            <tr>
+                <td><label for="con_password">Password Confirmation</label></td>
+                <td><input type="password" id="con_password" name="con_password" /></td>
+                <?php echo form_error('password'); ?>
+            </tr>
+            <tr>
+                <td><label for="email_address">Your Email</label></td>
+                <td><input type="text" id="email_address" name="email_address" value="<?php echo set_value('email'); ?>" /></td>
+                <?php echo form_error('email'); ?>
+            </tr>
+            <tr>
+            <td><input type="submit" value="Register" class="btn btn-primary"></td>
+      		</tr>
+      		</table>
+       
+</form>
 		
 	</div>
 

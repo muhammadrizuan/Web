@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>My Blog</title>
-
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('/css/bootstrap.css');?>">
 	<style type="text/css">
 
 	::selection{ background-color: #E13300; color: white; }
@@ -117,14 +117,25 @@ ul li.active{
 
 
 	</style>
+	<script language="javascript" src="js/bootstrap_new.js"></script>
+	<script language="javascript" src="js/bootsrap_new.min.js"></script>
 </head>
 <body>
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<a class="navbar-brand" href="#">My Blog</a>
+<div class="btn-group pull-right">
+<a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  create note
+</a>
 
+</div>
+</div>
+<br/>
 <div id="container">
-	<h1>Login</h1>
+	<h1>Welcome to Login</h1>
 
 	<div id="body">
-
+ 
 		<div id="dform">
 		<?php echo validation_errors(); ?>
 
@@ -134,15 +145,36 @@ ul li.active{
 		<input type="text" name="username" value="" size="50" />
 
 		<h5>Password</h5>
-		<input type="text" name="password" value="" size="50" />
-
-		<div><input type="submit" value="Submit" /></div>
+		<input type="password" name="password" value="" size="50" />
+		<br/><br/>
+		
+		<input type="submit" value="Login" class="btn btn-success">
+		<a href="<?php echo site_url('/clogin/register');?>" value="Register" class="btn btn-primary">Register</a>
 		</form>
 		</div>
 	</div>
 
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds</p>
+	<p class="footer">Created by W@N</p>
+
 </div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 </body>
 </html>

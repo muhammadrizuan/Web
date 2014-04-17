@@ -3,7 +3,7 @@ Class User extends CI_Model
 {
  function login($username, $password)
  {
-   $this -> db -> select('id, username, password');
+   $this ->db-> select('id, username, password, role');
    $this -> db -> from('users');
    $this -> db -> where('username', $username);
    $this -> db -> where('password', MD5($password));
@@ -20,5 +20,14 @@ Class User extends CI_Model
      return false;
    }
  }
+ public function add_user()
+   {
+    $data=array(
+      'username'=>$this->input->post('user_name'),
+      'password'=>md5($this->input->post('password')),
+      'email'=>$this->input->post('email_address')
+    );
+    $this->db->insert('users',$data);
+   }
 }
 ?>

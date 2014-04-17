@@ -13,6 +13,7 @@ class Cblog extends CI_Controller {
    {
      $session_data = $this->session->userdata('logged_in');
      $data['username'] = $session_data['username'];
+     $data['role'] = $session_data['role'];
      $this->load->view('blog', $data);
    }
    else
@@ -32,4 +33,3 @@ class Cblog extends CI_Controller {
 }
 
 ?>
-
